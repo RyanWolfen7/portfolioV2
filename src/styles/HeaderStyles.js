@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const NavBarWrapper = styled.div`
+export const HeaderWrapper = styled.div`
     grid-area: 1 / 1 / span 2 / span 5;
     background-color: #c53211;
     display: grid;
@@ -27,7 +27,7 @@ export const TitleContainer = styled.div`
         align-self: end;
         justify-self: center;
         font-size: 4rem;
-        margin: .8rem 0 0;
+        margin: .6rem 0 0;
     }
     h2 {
         color:  #e6dbc9;

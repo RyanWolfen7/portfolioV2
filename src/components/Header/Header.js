@@ -1,11 +1,11 @@
 import React from 'react'
-import { NavBarWrapper, Logo, LogoContainer, TitleContainer } from '../../styles/NavBarStyles'
+import { HeaderWrapper, Logo, LogoContainer, TitleContainer } from '../../styles/HeaderStyles'
 import LogoImg from '../../assets/images/Logo.png'
 
-const NavBar = props => {
+const Header = props => {
 
     return (
-        <NavBarWrapper>
+        <HeaderWrapper>
             <LogoContainer>
                 <Logo src={LogoImg} alt='blah'/>
             </LogoContainer>
@@ -13,8 +13,8 @@ const NavBar = props => {
                 <h1> Ryan Clark </h1>
                 <h2> Full Stack Web Dev </h2>
             </TitleContainer>
-        </NavBarWrapper>
+        </HeaderWrapper>
     )
 }
 
-export default NavBar
+export default Header
