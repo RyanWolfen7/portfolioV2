@@ -10,8 +10,8 @@ import Routes from './Routes'
 const GlobalStyle = createGlobalStyle`
 	body {
 		margin: 0;
-    padding: 0;
-    background: #e6dbc9;
+        padding: 0;
+        background: #e6dbc9;
 	}
 `
 
