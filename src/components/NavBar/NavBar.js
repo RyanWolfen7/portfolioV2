@@ -1,12 +1,17 @@
 import React from 'react'
-import { NavBarWrapper } from '../../styles/NavBarStyles'
-import Me from '../../assets/images/Me.jpg'
+import { NavBarWrapper, Logo, LogoContainer, TitleContainer } from '../../styles/NavBarStyles'
+import LogoImg from '../../assets/images/Logo.png'
 
 const NavBar = props => {
 
     return (
         <NavBarWrapper>
-            
+            <LogoContainer>
+                <Logo src={LogoImg} alt='blah'/>
+            </LogoContainer>
+            <TitleContainer>
+
+            </TitleContainer>
         </NavBarWrapper>
     )
 }

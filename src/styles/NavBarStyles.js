@@ -4,13 +4,29 @@ export const NavBarWrapper = styled.div`
     grid-area: 1 / 1 / span 2 / span 5;
     background-color: #c53211;
     display: grid;
-    grid-template-columns: repeat( autofill 5, minmax(0, 1fr));
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat( 5, minmax(0, 1fr));
+    grid-template-rows: repeat( 2, minmax(0, 1fr));
+    height: 100%;
+`
 
-    .div {
-        grid-area: 1 / 1;
-        display: block;
-    } 
+export const LogoContainer = styled.div`
+    grid-area: 1 / 1 / span 2 / span 2;
+    display: grid;
+`
+
+export const TitleContainer = styled.div`
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+`
+
+export const Logo = styled.img`
+    place-self: center;
+    object-fit: contain;
+    width: 80%;
+    max-height: 80%;
+    border: 1vw solid #2e3830;
 `
 
 // export const ImageContainer = styled.div`
