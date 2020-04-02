@@ -19,6 +19,23 @@ export const TitleContainer = styled.div`
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 3;
+    display: grid;
+
+    h1 {
+        color:  #e6dbc9;
+        font-variant-caps: petite-caps;
+        align-self: end;
+        justify-self: center;
+        font-size: 4rem;
+        margin: .8rem 0 0;
+    }
+    h2 {
+        color:  #e6dbc9;
+        justify-self: center;
+        align-self: start;
+        margin: 0 0 .8rem;
+    }
+}
 `
 
 export const Logo = styled.img`
@@ -26,7 +43,7 @@ export const Logo = styled.img`
     object-fit: contain;
     width: 80%;
     max-height: 80%;
-    border: 1vw solid #2e3830;
+    border: 1vh solid #2e3830;
 `
 
 // export const ImageContainer = styled.div`

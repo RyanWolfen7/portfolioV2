@@ -10,7 +10,8 @@ const NavBar = props => {
                 <Logo src={LogoImg} alt='blah'/>
             </LogoContainer>
             <TitleContainer>
-
+                <h1> Ryan Clark </h1>
+                <h2> Full Stack Web Dev </h2>
             </TitleContainer>
         </NavBarWrapper>
     )
