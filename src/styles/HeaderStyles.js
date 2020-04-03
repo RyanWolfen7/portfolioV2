@@ -26,14 +26,52 @@ export const TitleContainer = styled.div`
         font-variant-caps: petite-caps;
         align-self: end;
         justify-self: center;
-        font-size: 4rem;
         margin: .6rem 0 0;
+        font-size: ${ props => {
+                switch(props.windowSize){
+                    case 'phone':
+                        return '2rem'
+                        break
+                    case 'sm': 
+                    return '3rem'
+                        break
+                    case 'md':
+                        return '4rem'
+                        break
+                    case 'lg':
+                        return '5rem'
+                        break
+                    default: 
+                        return '6rem'
+                }
+            }
+        }
     }
     h2 {
         color:  #e6dbc9;
         justify-self: center;
         align-self: start;
         margin: 0 0 .8rem;
+        font-size: ${ props => {
+            console.log(props.windowSize)
+                switch(props.windowSize){
+                    case 'phone':
+                        return '1rem'
+                        break
+                    case 'sm': 
+                        return '1.5rem'
+                        break
+                    case 'md':
+                        return '2rem'
+                        break
+                    case 'lg':
+                        return '2.5rem'
+                        break
+                    default: 
+                        return '3rem'
+                }
+            }
+        }
     }
 }
 `
