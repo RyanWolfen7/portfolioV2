@@ -29,5 +29,13 @@ export const NavWrapper = styled.div`
 `
 
 export const NavButton = styled.div`
+    cursor: pointer;
+    ${ props => {
+        if(props.selected){
+        return (
+            `padding-bottom: 3px;
+            border-bottom: 3px solid #c53211;`
+        )}
+    }}
     
 `
