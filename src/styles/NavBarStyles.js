@@ -1,0 +1,33 @@
+import styled from 'styled-components'
+
+export const NavWrapper = styled.div`
+    background-color: #2e3830;
+    grid-area: 3 /1 / span 1 / span 6;
+    display: grid;
+    grid-template-columns: repeat( 5, minmax(0, 1fr));
+    align-content: center;
+    justify-items: center;
+    color: #e6dbc9;
+    font-size: ${ props => {
+        switch(props.windowSize){
+            case 'phone':
+                return '1rem'
+                break
+            case 'sm': 
+                return '1.2rem'
+                break
+            case 'md':
+                return '1.5rem'
+                break
+            case 'lg':
+                return '1.8rem'
+                break
+            default: 
+                return '2rem'
+        }
+    }}
+`
+
+export const NavButton = styled.div`
+    
+`
