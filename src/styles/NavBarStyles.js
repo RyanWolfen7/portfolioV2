@@ -12,16 +12,12 @@ export const NavWrapper = styled.div`
         switch(props.windowSize){
             case 'phone':
                 return '1rem'
-                break
             case 'sm': 
                 return '1.2rem'
-                break
             case 'md':
                 return '1.5rem'
-                break
             case 'lg':
                 return '1.8rem'
-                break
             default: 
                 return '2rem'
         }

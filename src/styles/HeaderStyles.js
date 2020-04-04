@@ -30,16 +30,12 @@ export const TitleContainer = styled.div`
                 switch(props.windowSize){
                     case 'phone':
                         return '2rem'
-                        break
                     case 'sm': 
                     return '3rem'
-                        break
                     case 'md':
                         return '4rem'
-                        break
                     case 'lg':
                         return '5rem'
-                        break
                     default: 
                         return '6rem'
                 }
@@ -55,16 +51,12 @@ export const TitleContainer = styled.div`
                 switch(props.windowSize){
                     case 'phone':
                         return '1rem'
-                        break
                     case 'sm': 
                         return '1.5rem'
-                        break
                     case 'md':
                         return '2rem'
-                        break
                     case 'lg':
                         return '2.5rem'
-                        break
                     default: 
                         return '3rem'
                 }
