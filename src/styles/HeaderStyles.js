@@ -52,7 +52,6 @@ export const TitleContainer = styled.div`
         align-self: start;
         margin: 0 0 .8rem;
         font-size: ${ props => {
-            console.log(props.windowSize)
                 switch(props.windowSize){
                     case 'phone':
                         return '1rem'
