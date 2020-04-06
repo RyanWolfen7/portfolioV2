@@ -3,6 +3,8 @@ import { withRouter } from 'react-router-dom'
 import Header from '../Header/Header'
 import { useWindowDimensions, determinWindowSize } from '../../helpers/index'
 import NavBar from '../NavBar/NavBar'
+import Home from '../Home/Home'
+import { ContentWrapper, Footer } from '../../styles/MainView'
 
 const MainView = props => {
     const [selected, setSelected] = useState({home: true, about: false, skills: false, projects: false, more: false})
@@ -13,7 +15,7 @@ const MainView = props => {
         const resetSelected = {home: false, about: false, skills: false, projects: false, more: false}
         setSelected({...resetSelected, ...{ [tab]: true }})
     }
-
+    console.log(selected)
     return ( <>
             <Header
                 window={windowSize}
@@ -23,6 +25,13 @@ const MainView = props => {
                 selected={selected}
                 handleSelectedTab={handleSelectedTab}
             />
+            <ContentWrapper>
+                {selected.home && <Home/>}
+            </ContentWrapper>
+
+            <Footer>
+                 helo
+            </Footer>
         </>
     )
 }
