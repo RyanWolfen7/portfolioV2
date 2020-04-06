@@ -1,0 +1,22 @@
+import styled from 'styled-components'
+
+export const FooterWrapper = styled.div`
+    display: grid;
+    grid-area: 10 / 1 / span 1 / span 5;
+    background-color:  #2e3830;
+    grid-template-columns: repeat( 7, minmax(0, 1fr));
+    justify-content: space-evenly;
+    justify-items: center;
+`
+
+export const BadgeContainer = styled.div`
+    display: grid;
+    cursor: pointer;
+`
+
+export const Badge = styled.img`
+    place-self: center;
+    object-fit: contain;
+    width: 65%;
+    height: 65%;
+`
