@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterWrapper, BadgeContainer, Badge } from '../../styles/FooterStyles'
+import { FooterWrapper, BadgeContainer, Badge, Spacer } from '../../styles/FooterStyles'
 import github from '../../assets/images/github.png'
 import linkedIn from '../../assets/images/linkedin.png'
 import faceBook from '../../assets/images/fb.png'
@@ -9,20 +9,20 @@ import gmail from '../../assets/images/gmail.png'
 const Footer = props => {
     return (
         <FooterWrapper>
-            <div></div>
-            <BadgeContainer>
+            <Spacer/>
+            <BadgeContainer href='https://github.com/RyanWolfen7?tab=repositories'>
                 <Badge src={github} />
             </BadgeContainer>
-            <BadgeContainer>
+            <BadgeContainer href='https://www.linkedin.com/in/ryan-clark-44b156127/'>
                 <Badge src={linkedIn} />
             </BadgeContainer>
-            <BadgeContainer>
+            <BadgeContainer href='https://www.facebook.com/ryan.clark.18400'>
                 <Badge src={faceBook} />
             </BadgeContainer>
-            <BadgeContainer>
+            <BadgeContainer href='https://www.youtube.com/channel/UCH4TK55SqiGyTIzwUnVpfxg?view_as=subscriber'>
                 <Badge src={youtube} />
             </BadgeContainer>
-            <BadgeContainer>
+            <BadgeContainer href='mailto:wolfen7lada@gmail.com'>
                 <Badge src={gmail} />
             </BadgeContainer>
         </FooterWrapper>

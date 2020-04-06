@@ -9,7 +9,7 @@ export const FooterWrapper = styled.div`
     justify-items: center;
 `
 
-export const BadgeContainer = styled.div`
+export const BadgeContainer = styled.a`
     display: grid;
     cursor: pointer;
 `
@@ -19,4 +19,8 @@ export const Badge = styled.img`
     object-fit: contain;
     width: 65%;
     height: 65%;
+`
+
+export const Spacer = styled.div`
+
 `
