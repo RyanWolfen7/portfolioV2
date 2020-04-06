@@ -16,7 +16,7 @@ const MainView = props => {
         const resetSelected = {home: false, about: false, skills: false, projects: false, more: false}
         setSelected({...resetSelected, ...{ [tab]: true }})
     }
-    console.log(selected)
+    
     return ( <>
             <Header
                 window={windowSize}

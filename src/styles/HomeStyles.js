@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { applySizedText } from '../helpers/index'
 
 export const HomeWrapper = styled.div`
     display: grid;
@@ -12,19 +13,9 @@ export const HomeCard = styled.div`
 `
 
 export const HomeCardHeader = styled.h1`
-    font-size: ${ props => {
-        switch(props.windowSize){
-            case 'phone':
-                return '1.3rem'
-            case 'sm': 
-                return '1.5rem'
-            case 'md':
-                return '2rem'
-            case 'lg':
-                return '2.5rem'
-            default: 
-                return '3rem'
-        }
+    font-size: ${ props => { 
+        const sizes = { phone: '1.3rem', sm: '1.5rem', md: '2rem', lg: '2.5rem', mx: '3rem'}
+        return applySizedText(props.windowSize, sizes) 
     }}
 
 `
@@ -36,17 +27,7 @@ export const HomeText = styled.p`
         font-family: "Arial Black", Gadget, sans-serif;
     }
     font-size: ${ props => {
-        switch(props.windowSize){
-            case 'phone':
-                return '1rem'
-            case 'sm': 
-                return '1.3rem'
-            case 'md':
-                return '1.5rem'
-            case 'lg':
-                return '1.7rem'
-            default: 
-                return '2rem'
-        }
+        const sizes = { phone: '1rem', sm: '1.3', md: '1.5rem', lg: '1.7rem', mx: '3rem'}
+        return applySizedText(props.windowSize, sizes)
     }}
 `

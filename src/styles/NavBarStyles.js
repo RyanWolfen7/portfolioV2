@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { applySizedText } from '../helpers/index'
 
 export const NavWrapper = styled.div`
     background-color: #2e3830;
@@ -8,19 +9,9 @@ export const NavWrapper = styled.div`
     align-content: center;
     justify-items: center;
     color: #e6dbc9;
-    font-size: ${ props => {
-        switch(props.windowSize){
-            case 'phone':
-                return '1rem'
-            case 'sm': 
-                return '1.2rem'
-            case 'md':
-                return '1.5rem'
-            case 'lg':
-                return '1.8rem'
-            default: 
-                return '2rem'
-        }
+    font-size: ${ props => { 
+        const sizes = { phone: '1rem', sm: '1.2rem', md: '1.5rem', lg: '1.8rem', mx: '2rem'}
+        return applySizedText(props.windowSize, sizes) 
     }}
 `
 

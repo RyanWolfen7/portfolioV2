@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { applySizedText } from '../helpers/index'
 
 export const HeaderWrapper = styled.div`
     grid-area: 1 / 1 / span 2 / span 5;
@@ -26,44 +27,21 @@ export const TitleContainer = styled.div`
         align-self: end;
         justify-self: center;
         margin: .6rem 0 0;
-        font-size: ${ props => {
-                switch(props.windowSize){
-                    case 'phone':
-                        return '2rem'
-                    case 'sm': 
-                    return '3rem'
-                    case 'md':
-                        return '4rem'
-                    case 'lg':
-                        return '5rem'
-                    default: 
-                        return '6rem'
-                }
-            }
-        }
+        font-size: ${ props => { 
+            const sizes = { phone: '2rem', sm: '3rem', md: '4rem', lg: '5rem', mx: '6rem'}
+            return applySizedText(props.windowSize, sizes) 
+        }}
     }
     h2 {
         color:  #e6dbc9;
         justify-self: center;
         align-self: start;
         margin: 0 0 .8rem;
-        font-size: ${ props => {
-                switch(props.windowSize){
-                    case 'phone':
-                        return '1rem'
-                    case 'sm': 
-                        return '1.5rem'
-                    case 'md':
-                        return '2rem'
-                    case 'lg':
-                        return '2.5rem'
-                    default: 
-                        return '3rem'
-                }
-            }
-        }
+        font-size: ${ props => { 
+            const sizes = { phone: '1rem', sm: '1.5rem', md: '2rem', lg: '2.5rem', mx: '3rem'}
+            return applySizedText(props.windowSize, sizes) 
+        }}
     }
-}
 `
 
 export const Logo = styled.img`

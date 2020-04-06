@@ -1,7 +1,8 @@
 import useWindowDimensions from './hooks/windowDimensions'
-import determinWindowSize from './functions/determinWIndowSize'
+import { determinWindowSize, applySizedText } from './functions/WindowSize'
 
 export {
     useWindowDimensions,
-    determinWindowSize
+    determinWindowSize,
+    applySizedText
 }
