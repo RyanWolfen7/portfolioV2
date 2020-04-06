@@ -27,7 +27,7 @@ const MainView = props => {
                 handleSelectedTab={handleSelectedTab}
             />
             <ContentWrapper>
-                {selected.home && <Home/>}
+                {selected.home && <Home window={windowSize}/>}
             </ContentWrapper>
             <Footer/>
         </>
