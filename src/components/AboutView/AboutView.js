@@ -12,7 +12,7 @@ const AboutView = props => {
         </PhotoWrapper>}
         <AboutContentWrapper windowSize={window}>
             <ContentCard>
-                <CardContent>
+                <CardContent windowSize={window}>
                     
                 </CardContent>
                 <CardFooter>

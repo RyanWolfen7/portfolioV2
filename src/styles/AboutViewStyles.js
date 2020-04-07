@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 import { applySizedText } from '../helpers/index'
 
+export const AboutWrapper = styled.div`
+    display: grid;
+    place-items: center;
+    color: #2e3830;
+`
+
 export const PhotoWrapper = styled.div`
     display: grid;
     grid-area: 2 / 1 / span 4 / span 2;
@@ -39,7 +45,7 @@ export const CardContent = styled.div`
     scrollbar-color: #C53212 #2e3830;
 
     ::-webkit-scrollbar {
-        width: 12px;               
+        width: ${props => props.windowSize === 'phone' ? '8px' : '12px'};               
     }
     ::-webkit-scrollbar-track {
         background: #E6DBC9; 

@@ -5,6 +5,7 @@ export const HomeWrapper = styled.div`
     display: grid;
     place-items: center;
     color: #2e3830;
+    grid-area: 1 / 1 / span 6 / span 5; 
 `
 
 export const HomeCard = styled.div`
