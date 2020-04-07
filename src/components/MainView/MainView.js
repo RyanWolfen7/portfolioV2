@@ -6,6 +6,7 @@ import NavBar from '../NavBar/NavBar'
 import Home from '../Home/Home'
 import { ContentWrapper } from '../../styles/MainView'
 import Footer from '../Footer/Footer'
+import AboutView from '../About/About'
 
 const MainView = props => {
     const [selected, setSelected] = useState({home: true, about: false, skills: false, projects: false, more: false})
@@ -28,6 +29,7 @@ const MainView = props => {
             />
             <ContentWrapper>
                 {selected.home && <Home window={windowSize}/>}
+                {selected.about && <AboutView window={windowSize}/>}
             </ContentWrapper>
             <Footer/>
         </>
