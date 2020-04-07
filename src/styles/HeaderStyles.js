@@ -47,7 +47,7 @@ export const TitleContainer = styled.div`
 export const Logo = styled.img`
     place-self: center;
     object-fit: contain;
-    width: 70%;
+    width: auto;
     max-height: 70%;
     border: 1vh solid #2e3830;
 `

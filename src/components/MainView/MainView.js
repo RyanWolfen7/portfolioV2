@@ -6,10 +6,10 @@ import NavBar from '../NavBar/NavBar'
 import Home from '../Home/Home'
 import { ContentWrapper } from '../../styles/MainView'
 import Footer from '../Footer/Footer'
-import AboutView from '../About/About'
+import AboutView from '../AboutView/AboutView'
 
 const MainView = props => {
-    const [selected, setSelected] = useState({home: true, about: false, skills: false, projects: false, more: false})
+    const [selected, setSelected] = useState({home: false, about: true, skills: false, projects: false, more: false})
     const { height, width } = useWindowDimensions()
     const windowSize = determinWindowSize(height, width)
 
