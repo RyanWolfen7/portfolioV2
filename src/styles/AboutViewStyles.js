@@ -37,8 +37,40 @@ export const ContentCard = styled.div`
     width: 80%;
     height: 80%;
     color: #E6DBC9;
-    grid-template-rows: 90% auto;
+    grid-template-rows: 5% 85% auto;
 `
+
+export const CardHeader = styled.div`
+    display: inline-grid;
+    color: #E6DBC9;
+    background: #C53212;
+    grid-template-columns: 25% 50% 25%;
+
+    h4 {
+        place-self: center;
+        margin: 0;
+        grid-column-start: 2;
+        font-size: ${ props => { 
+            const sizes = { phone: '.8rem', sm: '.9rem', md: '1rem', lg: '1.1rem', mx: '1.2rem'}
+            return applySizedText(props.windowSize, sizes) 
+        }}
+    }
+
+    img {
+        justify-self: end;
+        align-self: center;
+        object-fit: contain;
+        width: auto;
+        max-height: 90%;
+        margin-right: 5%;
+        transition: .6s;
+
+        :hover {
+            background-color: #E6DBC9;
+        }
+    }
+`
+
 export const CardContent = styled.div`
     overflow-y: scroll;
     scrollbar-width: thin;
@@ -69,4 +101,13 @@ export const History = styled.h4`
     place-self: center;
     margin: 0;
     cursor: pointer;
+    transition: 1.5s, 3s;
+
+    :hover {
+        height: 80%;
+        width: 80%; 
+        border: 1px solid #C53212;
+        color: #2E3831;
+        background-color: #E6DBC9;
+    }
 `

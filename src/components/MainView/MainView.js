@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer'
 import AboutView from '../AboutView/AboutView'
 
 const MainView = props => {
-    const [selected, setSelected] = useState({home: true, about: false, skills: false, projects: false, more: false})
+    const [selected, setSelected] = useState({home: false, about: true, skills: false, projects: false, more: false})
     const { height, width } = useWindowDimensions()
     const windowSize = determinWindowSize(height, width)
 
