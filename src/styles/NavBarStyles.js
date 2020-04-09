@@ -12,11 +12,12 @@ export const NavWrapper = styled.div`
     font-size: ${ props => { 
         const sizes = { phone: '1rem', sm: '1.2rem', md: '1.5rem', lg: '1.8rem', mx: '2rem'}
         return applySizedText(props.windowSize, sizes) 
-    }}
+    }};
 `
 
 export const NavButton = styled.div`
     cursor: pointer;
+    transition: .5s, 1.5s;
     ${ props => {
         if(props.selected){
         return (
@@ -24,5 +25,13 @@ export const NavButton = styled.div`
             border-bottom: 3px solid #c53211;`
         )}
     }}
-    
+    padding: .5vw;
+
+    :hover {
+        opacity: .6;
+        color: #2e3830;
+        background-color: #e6dbc9;
+        padding: auto;
+    }
+
 `
