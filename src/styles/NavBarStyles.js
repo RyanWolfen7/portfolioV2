@@ -28,10 +28,11 @@ export const NavButton = styled.div`
     padding: .5vw;
 
     :hover {
-        opacity: .6;
+        opacity: .8;
         color: #2e3830;
         background-color: #e6dbc9;
         padding: auto;
+        border-radius: 5%;
     }
 
 `
