@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { PhotoWrapper, AboutContentWrapper, Photo, ContentCard, CardContent, CardHeader } from '../../styles/AboutViewStyles'
+import { PhotoWrapper, AboutContentWrapper, Photo, ContentCard, CardContent, CardHeader, Body } from '../../styles/AboutViewStyles'
 import Me from '../../assets/images/Me.jpg'
 import Return from '../../assets/images/return.png'
 import { renderStory, renderTitle} from './StorySchema'
@@ -28,7 +28,7 @@ const AboutView = props => {
                 </CardHeader>
 
                 <CardContent windowSize={window}>
-                    {renderStory(selectedStory)}
+                    <Body>{renderStory(selectedStory)}</Body>
                 </CardContent>
 
                 <StoryFooter

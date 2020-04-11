@@ -35,7 +35,7 @@ export const ContentCard = styled.div`
     background-color: #2e3830;
     place-self: center;
     width: 80%;
-    height: 80%;
+    height: 50vh;
     color: #E6DBC9;
     grid-template-rows: 5% 85% auto;
 `
@@ -75,6 +75,8 @@ export const CardContent = styled.div`
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: #C53212 #2e3830;
+    place-items: center;
+    display: grid;
 
     ::-webkit-scrollbar {
         width: ${props => props.windowSize === 'phone' ? '8px' : '12px'};               
@@ -109,4 +111,9 @@ export const History = styled.h4`
         color: #2E3831;
         background-color: #E6DBC9;
     }
+`
+
+export const Body = styled.p`
+    align-self: start;
+    padding: 0 3vw 0;
 `
