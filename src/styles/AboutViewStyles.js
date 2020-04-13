@@ -38,6 +38,7 @@ export const ContentCard = styled.div`
     height: 50vh;
     color: #E6DBC9;
     grid-template-rows: 5% 85% auto;
+    
 `
 
 export const CardHeader = styled.div`
