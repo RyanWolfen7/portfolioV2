@@ -48,7 +48,7 @@ const theVet = (
 const theTraveler = (
     <>
         <p> While I was in the Army I managed to save up a years paycheck. I decided when I got out I'd use that money to explore as much of the world as I could. During my travels I've met wonderous people, the closest of which signed my guitar in thier native tounge. I learned so many things from so many different cultures. I visited over 28 countries in the span of 3 years, met the love of my life,
-            and even survived a few terrorist attacks to boot.</p>
+            and even survived a few terrorist attacks.</p>
         <p> The first place I traveled to was spain. Two weeks before I left, I was studying spanish. I had always wanted to learn another language and, seeing as many of my friends spoke spanish, I figured it would be a good place to start. I spent a whole month in Spain. I learned quite abit of the language and could even hold
             simple conversations by the time I left.</p>
         <p> After Spain, I traveled to Morocco, Parts of the Sahara with the Berbers, and learned alot about Muslim culture and customs especially since my visit was during Ramadan. The thing that shocked me most was to find out that the king of Morocco was the first to officially recognize the United States as a sovereign nation.</p>
