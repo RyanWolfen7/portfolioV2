@@ -8,7 +8,7 @@ import StoryFooter from './StoryFooter'
 const AboutView = props => {
     const { window } = props
     const phone = window === 'phone'
-    const [selectedStory, setSelectedStory] = useState({default: false, veteran: false, traveler: false, coder: true})
+    const [selectedStory, setSelectedStory] = useState({default: true, veteran: false, traveler: false, coder: false})
 
     const handleSelectedStory = story => {
         const resetSelected = {default: false, veteran: false, traveler: false, coder: false}
