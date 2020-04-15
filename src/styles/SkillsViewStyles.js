@@ -13,7 +13,9 @@ export const SkillTab = styled.a`
     margin: 0;
     cursor: pointer;
     transition: .5s, 1.5s;
-    border: .3vw solid  #2E3831;
+    border: .3vw solid #2E3831;
+    background-color: #C53212;
+    color: #E6DBC9 ;
     padding: 5%;
     border-radius: 5%;
 
@@ -21,15 +23,18 @@ export const SkillTab = styled.a`
         if(props.selected){
         return (
             `background-color: #2E3831;
+            border: .3vw solid #C53212;
             color: #E6DBC9;
             padding: 5%;`
-        )}
+        )} else {
+            return `
+                :hover {
+                    padding: .5vw;
+                    border: .3vw solid #C53212;
+                    background-color: #C53212;
+                    color: #E6DBC9;
+                }  
+            `
+        }
     }}
-
-    :hover {
-        padding: .5vw;
-        border: .3vw solid #C53212;
-        background-color: #C53212;
-        color: #E6DBC9;
-    }
 `

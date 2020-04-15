@@ -20,6 +20,7 @@ export const Badge = styled.img`
     width: 65%;
     height: 65%;
     transition: 1s;
+    border-radius: 2.5vw;
 
     :hover {
         width: 60%;
