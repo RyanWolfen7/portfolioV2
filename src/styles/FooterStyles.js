@@ -19,6 +19,12 @@ export const Badge = styled.img`
     object-fit: contain;
     width: 65%;
     height: 65%;
+    transition: 1s;
+
+    :hover {
+        width: 60%;
+        height: 60%;
+    }
 `
 
 export const Spacer = styled.div`
