@@ -24,7 +24,7 @@ export const renderStory = story => {
 
 const myStory = (
     <> 
-        <p> I was born in Heidelburg, Germany to two US Army parents. Being an Army brat we had to move often, because of this I've been exposed to many different walks of life.
+        <p id='top'> I was born in Heidelburg, Germany to two US Army parents. Being an Army brat we had to move often, because of this I've been exposed to many different walks of life.
             One of the pros to not having a seditary home is that I had to get use to making new connections everywhere I've gone.</p>
         <p> In Highschool I lived in Clarksville, TN. There I worked for AT&T, broke horses for a summer, and helped in restoration projects during the TN floods. I have many a
             fond memories there and tons of adventures to boot.</p>
@@ -35,7 +35,7 @@ const myStory = (
 
 const theVet = (
     <>
-        <p> I joined the Army in 2013 as an 11B Infantryman. I'd like to say I knew what I was getting into when I joined, because I was an Army brat, but it couldn't be further from the truth. There is a saying among Infantrymen that highlights ignorance and forces humility; "You gunna learn today"... and learned I did.</p>
+        <p id='top'> I joined the Army in 2013 as an 11B Infantryman. I'd like to say I knew what I was getting into when I joined, because I was an Army brat, but it couldn't be further from the truth. There is a saying among Infantrymen that highlights ignorance and forces humility; "You gunna learn today"... and learned I did.</p>
         <p> Basic was a culture shock for sure. You don't quite grasp a sense of urgency until you have a Drill Seargent screaming in your face. I developed foundations there for many of the skills I posses today. One of the biggest take aways I recieved there was our Drill Seargents last speach
             before graduation. He said there is alway one more hill to take, one more kilometer to march, and one more day to do it all over again. This philosophy is the motivation that allows me to push myself past impossible and yet still remain grounded.</p>
         <p> After Basic I was stationed at the worst place in the world... Hawaii; try not to feel to sorry for me. When it wasn't raining on us, we'd often bust our backs up mountains with nearly 100lbs of equipment on us, but even though my time there wasn't a cake walk... it was still Hawaii!!!</p>
@@ -47,7 +47,7 @@ const theVet = (
 
 const theTraveler = (
     <>
-        <p> While I was in the Army I managed to save up a years paycheck. I decided when I got out I'd use that money to explore as much of the world as I could. During my travels I've met wonderous people, the closest of which signed my guitar in thier native tounge. I learned so many things from so many different cultures. I visited over 28 countries in the span of 3 years, met the love of my life,
+        <p id='top'> While I was in the Army I managed to save up a years paycheck. I decided when I got out I'd use that money to explore as much of the world as I could. During my travels I've met wonderous people, the closest of which signed my guitar in thier native tounge. I learned so many things from so many different cultures. I visited over 28 countries in the span of 3 years, met the love of my life,
             and even survived a few terrorist attacks.</p>
         <p> The first place I traveled to was spain. Two weeks before I left, I was studying spanish. I had always wanted to learn another language and, seeing as many of my friends spoke spanish, I figured it would be a good place to start. I spent a whole month in Spain. I learned quite abit of the language and could even hold
             simple conversations by the time I left.</p>
@@ -60,7 +60,7 @@ const theTraveler = (
 
 const theCoder = (
     <>
-        <p>After all my traveling I realized I'd have to become a productive member of society again. I've always been interested in tech since I was a kid, but didn't have an avenue of approaching it as a carreer. I decided to go back to university and was accepted at the University of Alabama for a Computer Science Degree path. </p>
+        <p id='top'>After all my traveling I realized I'd have to become a productive member of society again. I've always been interested in tech since I was a kid, but didn't have an avenue of approaching it as a carreer. I decided to go back to university and was accepted at the University of Alabama for a Computer Science Degree path. </p>
         <p>Unfortionately due to a traumatic brain injury (TBI) from the Army I soon found myself having to temporarily halting studies to get treated. I fully recovered after my treatments, but found myself having to wait to get back to my studies. Reflecting upon some experiences I had, and the length it would take me to get into the career field, I decided I wasn't learning as much
             as I should fast enough. An example being that I got a 100% on an examn for writing an 13 nested 2000 line if else statement after a year of study.</p>
         <p> The realization of my ineptitude led me to re-evaluate my mindset and conduct the way I went about learning differently. In school I'd wait for a lesson to be given and not be proactive in finding these things out on my own. I decided during summer break I'd continue my studies at a code camp in London called Makers Academy. I chose Makers, because it destinguished itself as 

@@ -1,10 +1,13 @@
 import React from 'react'
+import { SkillViewWrapper } from '../../styles/SkillsViewStyles'
 
 const SkillsView = props => {
     const { windowSize } = props
 
     return (
-        <h1> Hellow World </h1>
+        <SkillViewWrapper>
+            
+        </SkillViewWrapper>
     )
 }
 

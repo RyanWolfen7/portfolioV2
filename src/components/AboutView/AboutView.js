@@ -13,6 +13,7 @@ const AboutView = props => {
     const handleSelectedStory = story => {
         const resetSelected = {default: false, veteran: false, traveler: false, coder: false}
         setSelectedStory({...resetSelected, ...{ [story]: true }})
+        document.getElementById('top').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
     }
 
     return (<>
@@ -28,7 +29,7 @@ const AboutView = props => {
                 </CardHeader>
 
                 <CardContent windowSize={windowSize}>
-                    <Body>{renderStory(selectedStory)}</Body>
+                    <Body id>{renderStory(selectedStory)}</Body>
                 </CardContent>
 
                 <StoryFooter
