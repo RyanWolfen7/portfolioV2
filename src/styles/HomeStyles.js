@@ -15,7 +15,7 @@ export const HomeCard = styled.div`
 
 export const HomeCardHeader = styled.h1`
     font-size: ${ props => { 
-        const sizes = { phone: '1.3rem', sm: '1.8rem', md: '2rem', lg: '2.5rem', mx: '3rem'}
+        const sizes = { phone: '1.3rem', sm: '1.8rem', md: '2rem', lg: '2.5rem', mx: '2.8rem'}
         return applySizedText(props.windowSize, sizes) 
     }}
 
@@ -28,7 +28,7 @@ export const HomeText = styled.p`
         font-family: "Arial Black", Gadget, sans-serif;
     }
     font-size: ${ props => {
-        const sizes = { phone: '1rem', sm: '1.4rem', md: '1.5rem', lg: '1.7rem', mx: '3rem'}
+        const sizes = { phone: '1rem', sm: '1.4rem', md: '1.5rem', lg: '1.6rem', mx: '2rem'}
         return applySizedText(props.windowSize, sizes)
     }}
 `

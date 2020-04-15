@@ -79,6 +79,13 @@ export const CardContent = styled.div`
     place-items: center;
     display: grid;
 
+    p {
+        font-size: ${ props => { 
+            const sizes = { phone: '1rem', sm: '1.2rem', md: '1.3rem', lg: '1.4rem', mx: '1.5rem'}
+            return applySizedText(props.windowSize, sizes) 
+        }}
+    }
+
     ::-webkit-scrollbar {
         width: ${props => props.windowSize === 'phone' ? '8px' : '12px'};               
     }
