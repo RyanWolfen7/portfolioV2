@@ -6,8 +6,8 @@ import { renderStory, renderTitle} from './StorySchema'
 import StoryFooter from './StoryFooter' 
 
 const AboutView = props => {
-    const { window } = props
-    const phone = window === 'phone'
+    const { windowSize } = props
+    const phone = windowSize === 'phone'
     const [selectedStory, setSelectedStory] = useState({default: true, veteran: false, traveler: false, coder: false})
 
     const handleSelectedStory = story => {
@@ -17,17 +17,17 @@ const AboutView = props => {
 
     return (<>
         { !phone && <PhotoWrapper> 
-            <Photo src={Me} windowSize={window}/>
+            <Photo src={Me} windowSize={windowSize}/>
         </PhotoWrapper>}
 
-        <AboutContentWrapper windowSize={window}>
+        <AboutContentWrapper windowSize={windowSize}>
             <ContentCard>
-                <CardHeader windowSize={window}> 
+                <CardHeader windowSize={windowSize}> 
                     <h4> {renderTitle(selectedStory)} </h4>
                     {! selectedStory.default && <img src={Return} onClick={() => handleSelectedStory('default')}/>}
                 </CardHeader>
 
-                <CardContent windowSize={window}>
+                <CardContent windowSize={windowSize}>
                     <Body>{renderStory(selectedStory)}</Body>
                 </CardContent>
 

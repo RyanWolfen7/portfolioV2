@@ -15,6 +15,7 @@ const StoryFooter = props => {
                 return (
                     <History
                         id={story}
+                        key={story}
                         selected={selectedStory[story]}
                         onClick={event => handleSelect(event)}
                     >

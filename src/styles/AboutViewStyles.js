@@ -114,7 +114,7 @@ export const History = styled.h4`
     }
 `
 
-export const Body = styled.p`
+export const Body = styled.div`
     align-self: start;
     padding: 0 3vw 0;
 `

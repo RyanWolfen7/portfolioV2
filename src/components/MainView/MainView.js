@@ -21,17 +21,17 @@ const MainView = props => {
     
     return ( <>
             <Header
-                window={windowSize}
+                windowSize={windowSize}
             />
             <NavBar
-                window={windowSize}
+                windowSize={windowSize}
                 selected={selected}
                 handleSelectedTab={handleSelectedTab}
             />
             <ContentWrapper>
-                {selected.home && <Home window={windowSize}/>}
-                {selected.about && <AboutView window={windowSize}/>}
-                {selected.skills && <SkillsView window={windowSize}/>}
+                {selected.home && <Home windowSize={windowSize}/>}
+                {selected.about && <AboutView windowSize={windowSize}/>}
+                {selected.skills && <SkillsView windowSize={windowSize}/>}
             </ContentWrapper>
             <Footer/>
         </>
