@@ -8,7 +8,7 @@ const NavBar = props => {
         handleSelectedTab(event.target.id)
     }
     return(
-        <NavWrapper windowSize={window}>
+        <NavWrapper windowSize={windowSize}>
             <NavButton id={'home'} selected={selected.home} onClick={event => handleSelect(event)} windowSize={windowSize}>Home</NavButton>
             <NavButton id={'about'} selected={selected.about} onClick={event => handleSelect(event)} windowSize={windowSize}>About</NavButton>
             <NavButton id={'skills'} selected={selected.skills} onClick={event => handleSelect(event)} windowSize={windowSize}>Skills</NavButton>
