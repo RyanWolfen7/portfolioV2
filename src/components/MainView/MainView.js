@@ -7,6 +7,7 @@ import Home from '../Home/Home'
 import { ContentWrapper } from '../../styles/MainView'
 import Footer from '../Footer/Footer'
 import AboutView from '../AboutView/AboutView'
+import SkillsView from '../SkillsView/SkillsView'
 
 const MainView = props => {
     const [selected, setSelected] = useState({home: false, about: false, skills: true, projects: false, more: false})
@@ -30,6 +31,7 @@ const MainView = props => {
             <ContentWrapper>
                 {selected.home && <Home window={windowSize}/>}
                 {selected.about && <AboutView window={windowSize}/>}
+                {selected.skills && <SkillsView window={windowSize}/>}
             </ContentWrapper>
             <Footer/>
         </>
