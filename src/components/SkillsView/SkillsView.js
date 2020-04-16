@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import SkillHeader from './SkillsHeader'
+import SkillFooter from './SkillsFooter'
+import { SkillsContainer } from '../../styles/SkillsViewStyles'
 
 const SkillsView = props => {
     const [selectedSkill, setSelectedSkill] = useState({ tech: true, languages: false, testimonials: false, other: false})
@@ -11,7 +12,10 @@ const SkillsView = props => {
     }
 
     return (<>
-        <SkillHeader
+        <SkillsContainer>
+            
+        </SkillsContainer>
+        <SkillFooter
             selectedSkill={selectedSkill}
             handleSelectedSkill={handleSelectedSkill}
             windowSize={windowSize}

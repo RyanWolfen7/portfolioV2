@@ -8,6 +8,11 @@ export const SkillViewHeader = styled.div`
     background-color:  #C53212;
 `
 
+export const SkillsContainer = styled.div`
+    grid-area: 1 / 1 / span 5/ span 5;
+    display: grid;
+`
+
 export const SkillTab = styled.a`
     display: grid;
     place-self: center;

@@ -2,7 +2,7 @@ import React from 'react'
 import { SkillViewHeader, SkillTab } from '../../styles/SkillsViewStyles'
 import { capitalizeFirstLetter } from '../../helpers/index'
 
-const SkillHeader = props => {
+const SkillsFooter = props => {
     const {selectedSkill, handleSelectedSkill, windowSize } = props
 
     const handleSelect = event => {
@@ -27,4 +27,4 @@ const SkillHeader = props => {
     return<SkillViewHeader> { renderSkillButtons() } </SkillViewHeader>
 }
 
-export default SkillHeader
+export default SkillsFooter
