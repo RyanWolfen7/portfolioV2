@@ -14,6 +14,7 @@ const SkillsView = props => {
         <SkillHeader
             selectedSkill={selectedSkill}
             handleSelectedSkill={handleSelectedSkill}
+            windowSize={windowSize}
         />
     </>)
 }
