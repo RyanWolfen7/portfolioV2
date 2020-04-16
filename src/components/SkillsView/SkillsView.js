@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import SkillFooter from './SkillsFooter'
-import { SkillsContainer } from '../../styles/SkillsViewStyles'
+import TechSkills from './SkillsTech'
 
 const SkillsView = props => {
     const [selectedSkill, setSelectedSkill] = useState({ tech: true, languages: false, testimonials: false, other: false})
@@ -12,9 +12,7 @@ const SkillsView = props => {
     }
 
     return (<>
-        <SkillsContainer>
-            
-        </SkillsContainer>
+            {selectedSkill.tech && <TechSkills windowSize={windowSize}/>}
         <SkillFooter
             selectedSkill={selectedSkill}
             handleSelectedSkill={handleSelectedSkill}
