@@ -1,4 +1,4 @@
-import cSharpIcon from './c#.png'
+import cSharpIcon from './c.png'
 import jsIcon from './js.png'
 import rubyIcon from './ruby.png'
 import sqlIcon from './sql.png'

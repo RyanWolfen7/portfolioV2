@@ -12,7 +12,9 @@ export const SkillsContainer = styled.div`
     grid-area: 1 / 1 / span 5/ span 5;
     display: grid;
     grid-template-columns: ${props => {
-        const sizes = { phone: '3', sm: '4', md: '5', lg: '6', mx: '8'}
+        let sizes = {}
+        if(props.tech) sizes = { phone: '3', sm: '4', md: '5', lg: '6', mx: '8'}
+        if(props.languages) sizes = { phone: '2', sm: '3', md: '4', lg: '5', mx: '7'}
         const columns = applySizedText(props.windowSize, sizes)
         return `repeat(${columns}, 1fr);`
     }};
@@ -36,7 +38,7 @@ export const SkillsContainer = styled.div`
     }
 `
 
-export const TechSkillsCard = styled.div`
+export const SkillsCard = styled.div`
     border: .3vw solid #2e3830;      
     display: grid;
     width: 100%;

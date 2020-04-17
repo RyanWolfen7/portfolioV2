@@ -1,5 +1,5 @@
 import React from 'react'
-import { TechSkillsCard, SkillsContainer } from '../../styles/SkillsViewStyles'
+import { SkillsCard, SkillsContainer } from '../../styles/SkillsViewStyles'
 import techIcons from '../../assets/techIcons/index'
 
 const TechSkills = props => {
@@ -8,16 +8,16 @@ const TechSkills = props => {
     const renderTechSkills = () => {
         return techIcons.map(skill => {
             return (
-                <TechSkillsCard> 
+                <SkillsCard> 
                     <img 
                         src={skill}
                     />
-                </TechSkillsCard>
+                </SkillsCard>
             )
         })
     }
 
-    return <SkillsContainer windowSize={windowSize}>{renderTechSkills()} </SkillsContainer>
+    return <SkillsContainer tech windowSize={windowSize}>{renderTechSkills()} </SkillsContainer>
 
 }
 
