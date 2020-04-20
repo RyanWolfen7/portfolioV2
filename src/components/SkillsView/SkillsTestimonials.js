@@ -1,8 +1,9 @@
 import React from 'react'
+import { SkillsContainer } from '../../styles/SkillsViewStyles'
 
 const Testimonials = props => {
 
-    return <h1> Hello Moto </h1>
+    return <SkillsContainer> hello moto </SkillsContainer>
 }
 
 export default Testimonials
