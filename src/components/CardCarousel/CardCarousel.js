@@ -1,12 +1,14 @@
 import React, { useState} from 'react'
-import { CardCarousel } from '../../styles/CarouselStyles'
+import { CarouselContainer } from '../../styles/CarouselStyles'
 
 const CardCarousel = props => {
 
     return (
-        <CardCarousel>
-            <h1>h</h1>
-        </CardCarousel>
+        <CarouselContainer>
+            <h1>h</h1> {/* left arrow */}
+            <h1>h</h1> {/* content */}
+            <h1>h</h1> {/* right arrow */}
+        </CarouselContainer>
     )
 }
 

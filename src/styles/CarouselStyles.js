@@ -7,7 +7,9 @@ export const CarouselContainer = styled.div`
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    background-color: pink;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
 `
 
 export const DotContainer = styled.div`
