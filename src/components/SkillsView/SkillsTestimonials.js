@@ -1,11 +1,15 @@
 import React from 'react'
-import { SkillsContainer } from '../../styles/SkillsViewStyles'
+import { SkillsContainer, TestimonialContainer } from '../../styles/SkillsViewStyles'
+import CardCarousel from '../CardCarousel/CardCarousel'
 
 
 const Testimonials = props => {
 
-    return <SkillsContainer>
-    </SkillsContainer>
+    return (
+        <TestimonialContainer>
+            <CardCarousel/>
+        </TestimonialContainer>
+    )
 }
 
 export default Testimonials

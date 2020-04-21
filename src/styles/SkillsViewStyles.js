@@ -84,3 +84,7 @@ export const SkillTab = styled.a`
         }
     }}
 `
+
+export const TestimonialContainer = styled.div`
+    grid-area: 1 / 1 / span 5/ span 5;
+`
