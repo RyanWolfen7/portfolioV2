@@ -16,7 +16,11 @@ const CardCarousel = props => {
         }
     }
 
-    return null
+    return (
+        <CardCarousel>
+            
+        </CardCarousel>
+    )
 }
 
 export default CardCarousel
