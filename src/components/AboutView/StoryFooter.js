@@ -22,7 +22,9 @@ const StoryFooter = props => {
                         {!phone && 'The'} { capitalizeFirstLetter(story) } 
                     </History>
                 )
-            }            
+            } else {
+                return null
+            }           
         })
     }
 

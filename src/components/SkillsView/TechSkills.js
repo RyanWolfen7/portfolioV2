@@ -11,6 +11,7 @@ const TechSkills = props => {
                 <SkillsCard> 
                     <img 
                         src={skill}
+                        alt={skill}
                     />
                 </SkillsCard>
             )

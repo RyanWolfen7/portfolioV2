@@ -11,6 +11,7 @@ const LanguageSkills = props => {
                 <SkillsCard> 
                     <img 
                         src={skill}
+                        alt={skill}
                     />
                 </SkillsCard>
             )

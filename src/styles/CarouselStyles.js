@@ -3,8 +3,8 @@ import { applySizedText } from '../helpers/index'
 
 export const CarouselContainer = styled.div`
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 `
@@ -24,4 +24,47 @@ export const Dot = styled.span`
     cursor: pointer;
     border-radius: 50%;
     background: ${props => props.active ? 'black' : 'white'};
+`
+
+export const ArrowContainer = styled.div`
+    display: flex;
+    position: absolute;
+    top: 50%;
+    ${props => props.direction === 'right' ? `right: 25px` : `left: 25px`};
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    transition: transform ease-in 0.1s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    img {
+        transform: translateX(${props => props.direction === 'left' ? '-2' : '2'}px);
+        &:focus {
+            outline: 0;
+        }
+    }
+`
+
+export const CarouselContent = styled.div`
+    transform: translateX(-${props => props.translate}px);
+    transition: transform ease-out ${props => props.transition}s;
+    height: 100%;
+    width: ${props => props.width}px;
+    display: flex;
+`
+
+export const Card = styled.div`
+    height: 100;
+    width: 100%;
+    background-image: url('${props => props.content}');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 `
