@@ -55,6 +55,7 @@ export const CardContent = styled.div`
     height: 100%;
     font-family: "Arial Black", Gadget, sans-serif;
     place-items: center;
+    transition: .5s, 1.5s;
 
     h1 {
         align-self: end;
@@ -63,6 +64,20 @@ export const CardContent = styled.div`
         font-size: ${ props => { 
             const sizes = { phone: '1.5rem', sm: '1.7rem', md: '1.9rem', lg: '2.1rem', mx: '2.3rem'}
             return applySizedText(props.windowSize, sizes) 
+        }};
+
+        ${props => {
+            if(props.linkedIn) 
+                return `
+                transition: 2s;
+                cursor: pointer;
+
+                &:hover {
+                    color: #E6DBC9;
+                    transform: scale(1.005);
+                    background: #2E3831;
+                    padding: 1vw;
+                }`
         }}
     }
     h2 {
@@ -83,22 +98,39 @@ export const CardContent = styled.div`
     }
 `
 
-// export const DotContainer = styled.div`
-//     position: absolute;
-//     bottom: 25px;
-//     width: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// `
+export const DotContainer = styled.div`
+    position: absolute;
+    bottom: 1vw;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat( ${props => props.number}, 1fr);
+    place-items: center;
+    place-self: center;
+    transition: .5s, 1.5s;
+`
 
-// export const Dot = styled.span`
-//     padding: 10px;
-//     margin-right: 5px;
-//     cursor: pointer;
-//     border-radius: 50%;
-//     background: ${props => props.active ? 'black' : 'white'};
-// `
+export const Dot = styled.span`
+    padding: ${ props => { 
+        const sizes = { phone: '.3rem', sm: '.4rem', md: '.5rem', lg: '.5rem', mx: '.5rem'}
+        return applySizedText(props.windowSize, sizes) 
+    }};
+    margin-right: .5vw;
+    cursor: pointer;
+    border-radius: 50%;
+    border: ${ props => { 
+        const sizes = { phone: '.1rem', sm: '.1rem', md: '.2rem', lg: '.2rem', mx: '.2rem'}
+        return applySizedText(props.windowSize, sizes)
+    }} solid #2E3831;
+    background: ${props => props.active ? '#2e3830' : '#E6DBC9'};
+    opacity: .5;
+    transition: 2s;
+
+    &:hover {
+        opacity: 1;
+        background: #2E3831;
+        transform: scale(1.1);
+    }
+`
 
 // export const ArrowContainer = styled.div`
 //     display: flex;
