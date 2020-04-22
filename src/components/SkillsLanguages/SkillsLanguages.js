@@ -6,9 +6,9 @@ const LanguageSkills = props => {
     const { windowSize } = props
 
     const renderTechSkills = () => {
-        return languageIcons.map(skill => {
+        return languageIcons.map((skill, i)=> {
             return (
-                <SkillsCard> 
+                <SkillsCard key={i}> 
                     <img 
                         src={skill}
                         alt={skill}
