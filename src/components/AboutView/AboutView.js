@@ -25,11 +25,11 @@ const AboutView = props => {
             <ContentCard>
                 <CardHeader windowSize={windowSize}> 
                     <h4> {renderTitle(selectedStory)} </h4>
-                    {! selectedStory.default && <img src={Return} alt={'return'} onClick={() => handleSelectedStory('default')}/>}
+                    {!selectedStory.default && <img src={Return} alt={'return'} onClick={() => handleSelectedStory('default')}/>}
                 </CardHeader>
 
                 <CardContent windowSize={windowSize}>
-                    <Body id>{renderStory(selectedStory)}</Body>
+                    <Body>{renderStory(selectedStory)}</Body>
                 </CardContent>
 
                 <StoryFooter
