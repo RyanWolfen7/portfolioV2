@@ -13,11 +13,17 @@ export const CarouselContainer = styled.div`
 
     img {
         place-self: center;
+        cursor: pointer;
         height: ${ props => { 
             const sizes = { phone: '.8rem', sm: '1.2rem', md: '1.3rem', lg: '1.4rem', mx: '1.5rem'}
             return applySizedText(props.windowSize, sizes) 
         }};
         width: auto;
+        transition: transform ease-in 0.1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 `
 

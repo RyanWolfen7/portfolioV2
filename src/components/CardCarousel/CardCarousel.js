@@ -8,10 +8,17 @@ const CardCarousel = props => {
     const { schema, windowSize } = props
     const { name, company, position, testimonial, linkedIn} = schema[index]
 
-    console.log(windowSize)
+    const cycleCard = direction => {
+        if(direction === 'left') {
+            index === 0 ? setIndex(schema.length - 1) : setIndex(index - 1)
+        } else {
+            index === schema.length - 1 ? setIndex(0) : setIndex(index + 1)
+        }
+    }
+
     return (
         <CarouselContainer windowSize={windowSize}>
-            { schema.length > 1 ? <img src={leftArrow} alt={leftArrow}/> : <div/> }
+            { schema.length > 1 ? <img onClick={() => cycleCard('left')} src={leftArrow} alt={leftArrow}/> : <div/> }
 
             <TestimonialCard windowSize={windowSize}>
                 <CardContent windowSize={windowSize}>
@@ -21,7 +28,7 @@ const CardCarousel = props => {
                 </CardContent>
             </TestimonialCard>
 
-            { schema.length > 1 ? <img src={rightArrow} alt={rightArrow}/> : <div/> }
+            { schema.length > 1 ? <img onClick={() => cycleCard('right')} src={rightArrow} alt={rightArrow}/> : <div/> }
         </CarouselContainer>
     )
 }
