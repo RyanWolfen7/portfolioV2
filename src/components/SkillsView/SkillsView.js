@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import SkillFooter from './SkillsFooter'
-import TechSkills from './TechSkills'
-import LanguageSkills from './SkillsLanguages'
-import Testimonials from './SkillsTestimonials'
+import TechSkills from '../TechSkills/TechSkills'
+import LanguageSkills from '../SkillsLanguages/SkillsLanguages'
+import Testimonials from '../SkillsTestimonials/SkillsTestimonials'
 
 const SkillsView = props => {
     const [selectedSkill, setSelectedSkill] = useState({ tech: false, languages: false, testimonials: true, other: false})

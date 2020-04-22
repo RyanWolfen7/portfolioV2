@@ -1,12 +1,13 @@
-import React, { useState} from 'react'
-import { CarouselContainer } from '../../styles/CarouselStyles'
+import React, { useState } from 'react'
+import { CarouselContainer, CarouselContent } from '../../styles/CarouselStyles'
 
 const CardCarousel = props => {
+    const [ testimonial, setTestimonial ] = useState(0)
 
     return (
         <CarouselContainer>
             <h1>h</h1> {/* left arrow */}
-            <h1>h</h1> {/* content */}
+            <p>balaljfh</p>
             <h1>h</h1> {/* right arrow */}
         </CarouselContainer>
     )
