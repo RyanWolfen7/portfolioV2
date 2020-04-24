@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CarouselContainer, DotContainer, Dot } from '../../styles/CarouselStyles'
+import { CarouselContainer, DotContainer, Dot, Arrows } from '../../styles/CarouselStyles'
 import leftArrow from '../../assets/images/leftArrow.png'
 import rightArrow from '../../assets/images/rightArrow.png'
 
@@ -23,9 +23,9 @@ const CardCarousel = props => {
 
     return (
         <CarouselContainer windowSize={windowSize}>
-            { schema.length > 1 ? <img onClick={() => cycleCard('left')} src={leftArrow} alt={leftArrow}/> : <div/> }
+            { schema.length > 1 ? <Arrows onClick={() => cycleCard('left')} src={leftArrow} alt={leftArrow}/> : <Arrows/> }
             { content(schema, index) }
-            { schema.length > 1 ? <img onClick={() => cycleCard('right')} src={rightArrow} alt={rightArrow}/> : <div/> }
+            { schema.length > 1 ? <Arrows onClick={() => cycleCard('right')} src={rightArrow} alt={rightArrow}/> : <div/> }
             <DotContainer number={schema.length}> { schema.length > 1 && renderDots() }</DotContainer>
         </CarouselContainer>
     )

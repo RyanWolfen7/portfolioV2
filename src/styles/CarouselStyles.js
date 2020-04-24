@@ -10,20 +10,19 @@ export const CarouselContainer = styled.div`
     display: grid;
     grid-template-columns: 10% 80% 10%;
     align-items: center;
+`
+export const Arrows = styled.img`
+    place-self: center;
+    cursor: pointer;
+    height: ${ props => { 
+        const sizes = { phone: '.8rem', sm: '1.2rem', md: '1.3rem', lg: '1.4rem', mx: '1.5rem'}
+        return applySizedText(props.windowSize, sizes) 
+    }};
+    width: auto;
+    transition: transform ease-in 0.1s;
 
-    img {
-        place-self: center;
-        cursor: pointer;
-        height: ${ props => { 
-            const sizes = { phone: '.8rem', sm: '1.2rem', md: '1.3rem', lg: '1.4rem', mx: '1.5rem'}
-            return applySizedText(props.windowSize, sizes) 
-        }};
-        width: auto;
-        transition: transform ease-in 0.1s;
-
-        &:hover {
-            transform: scale(1.2);
-        }
+    &:hover {
+        transform: scale(1.2);
     }
 `
 
@@ -130,4 +129,53 @@ export const Dot = styled.span`
         background: #2E3831;
         transform: scale(1.1);
     }
+`
+
+export const OtherCard = styled.div`
+    display: grid;
+    ${ props => !props.phone ? 'grid-template-columns: 50% 50%;' : '' } 
+    width: 100%;
+    height: 100%;
+`
+export const OtherCardContent = styled.div`
+    display: grid;
+    color: #2E3831;
+    place-content: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    height: 100%;
+
+    h1 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    h3 {
+        margin: 0 0 6%;
+    }
+
+`
+
+export const SkillList = styled.li`
+    ${props => {
+        if(props.link) {
+            return `
+                cursor: pointer;
+                transition: 2s;
+                opacity: .5;
+                
+                &:hover {
+                    opacity: .7;
+                    color: #C53212;
+                }
+            `
+        }
+    }}
+`
+
+export const Icon = styled.img`
+    place-self: center;
+    width: 50%;
+    max-height: 40vh;
+    object-fit: contain;
 `
