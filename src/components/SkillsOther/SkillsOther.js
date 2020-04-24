@@ -19,7 +19,7 @@ const OtherSkills = props => {
                     <h3> {subtitle} </h3>
                     { skillArray.map( skill => { 
                         const isLink = skill === 'https://hellopoetry.com/ryan-clark/poems/popular/'
-                        // All this for one skill ... refactor later 
+                        // All this for one skill ... refactor later future me
                         return <SkillList key={skill} link={isLink} onClick={() => {if(isLink) window.open(skill)}}> {isLink ? 'Find them HERE' : skill} </SkillList>
                         })
                     }
