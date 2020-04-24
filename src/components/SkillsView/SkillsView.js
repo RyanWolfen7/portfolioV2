@@ -3,9 +3,10 @@ import SkillFooter from './SkillsFooter'
 import TechSkills from '../TechSkills/TechSkills'
 import LanguageSkills from '../SkillsLanguages/SkillsLanguages'
 import Testimonials from '../SkillsTestimonials/SkillsTestimonials'
+import OtherSkills from '../SkillsOther/SkillsOther'
 
 const SkillsView = props => {
-    const [selectedSkill, setSelectedSkill] = useState({ tech: false, languages: false, testimonials: true, other: false})
+    const [selectedSkill, setSelectedSkill] = useState({ tech: false, languages: false, testimonials: false, other: true})
     const { windowSize } = props
 
     const handleSelectedSkill = story => {
@@ -17,6 +18,7 @@ const SkillsView = props => {
             {selectedSkill.tech && <TechSkills windowSize={windowSize}/>}
             {selectedSkill.languages && <LanguageSkills windowSize={windowSize}/>}
             {selectedSkill.testimonials && <Testimonials windowSize={windowSize}/>}
+            {selectedSkill.other && <OtherSkills windowSize={windowSize}/>}
         <SkillFooter
             selectedSkill={selectedSkill}
             handleSelectedSkill={handleSelectedSkill}

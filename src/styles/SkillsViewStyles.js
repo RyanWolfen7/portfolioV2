@@ -8,6 +8,12 @@ export const SkillViewHeader = styled.div`
     background-color:  #C53212;
 `
 
+export const OtherContainer = styled.div`
+    grid-area: 1 / 1 / span 5 / span5;
+    display: grid;
+    align-items: center;
+`
+
 export const SkillsContainer = styled.div`
     grid-area: 1 / 1 / span 5/ span 5;
     display: grid;

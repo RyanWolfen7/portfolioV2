@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import { CarouselContainer, TestimonialCard, CardContent, DotContainer, Dot } from '../../styles/CarouselStyles'
+import { CarouselContainer, DotContainer, Dot } from '../../styles/CarouselStyles'
 import leftArrow from '../../assets/images/leftArrow.png'
 import rightArrow from '../../assets/images/rightArrow.png'
 
 const CardCarousel = props => {
     const [ index, setIndex ] = useState(0)
-    const { schema, windowSize } = props
-    const { name, company, position, testimonial, linkedIn} = schema[index]
+    const { schema, windowSize, content } = props
 
     const cycleCard = direction => {
         if(direction === 'left') {
@@ -17,7 +16,7 @@ const CardCarousel = props => {
     }
 
     const renderDots = () => {
-        return schema.map( (testimonial, i) => {
+        return schema.map( (card, i) => {
             return <Dot onClick={() => setIndex(i)} key={i} active={i === index} windowSize={windowSize}/>
         })
     }
@@ -25,15 +24,7 @@ const CardCarousel = props => {
     return (
         <CarouselContainer windowSize={windowSize}>
             { schema.length > 1 ? <img onClick={() => cycleCard('left')} src={leftArrow} alt={leftArrow}/> : <div/> }
-
-            <TestimonialCard windowSize={windowSize}>
-                <CardContent windowSize={windowSize} linkedIn={linkedIn}>
-                    <h1 onClick={() => { if(linkedIn) window.open(linkedIn, name) } }> { name } </h1>
-                    <h2> { position } @ { company} </h2>
-                    <p> " { testimonial } "</p>
-                </CardContent>
-            </TestimonialCard>
-
+            { content(schema, index) }
             { schema.length > 1 ? <img onClick={() => cycleCard('right')} src={rightArrow} alt={rightArrow}/> : <div/> }
             <DotContainer number={schema.length}> { schema.length > 1 && renderDots() }</DotContainer>
         </CarouselContainer>
@@ -41,3 +32,5 @@ const CardCarousel = props => {
 }
 
 export default CardCarousel
+
+// Make Sure the content always has an schema(object), index
