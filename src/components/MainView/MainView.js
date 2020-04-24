@@ -10,7 +10,7 @@ import AboutView from '../AboutView/AboutView'
 import SkillsView from '../SkillsView/SkillsView'
 
 const MainView = props => {
-    const [selected, setSelected] = useState({home: false, about: false, skills: true, projects: false, more: false})
+    const [selected, setSelected] = useState({home: false, about: false, skills: false, projects: true, more: false})
     const { height, width } = useWindowDimensions()
     const windowSize = determinWindowSize(height, width)
 

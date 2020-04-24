@@ -6,7 +6,7 @@ import Testimonials from '../SkillsTestimonials/SkillsTestimonials'
 import OtherSkills from '../SkillsOther/SkillsOther'
 
 const SkillsView = props => {
-    const [selectedSkill, setSelectedSkill] = useState({ tech: false, languages: false, testimonials: false, other: true})
+    const [selectedSkill, setSelectedSkill] = useState({ tech: true, languages: false, testimonials: false, other: false})
     const { windowSize } = props
 
     const handleSelectedSkill = story => {
