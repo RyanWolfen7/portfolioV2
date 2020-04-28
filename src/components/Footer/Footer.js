@@ -10,19 +10,19 @@ const Footer = props => {
     return (
         <FooterWrapper>
             <Spacer/>
-            <BadgeContainer href='https://github.com/RyanWolfen7?tab=repositories'>
+            <BadgeContainer href='https://github.com/RyanWolfen7?tab=repositories' target='_blank'>
                 <Badge src={github} />
             </BadgeContainer>
-            <BadgeContainer href='https://www.linkedin.com/in/ryan-clark-44b156127/'>
+            <BadgeContainer href='https://www.linkedin.com/in/ryan-clark-44b156127/' target='_blank'>
                 <Badge src={linkedIn} />
             </BadgeContainer>
-            <BadgeContainer href='https://www.facebook.com/ryan.clark.18400'>
+            <BadgeContainer href='https://www.facebook.com/ryan.clark.18400' target='_blank'>
                 <Badge src={faceBook} />
             </BadgeContainer>
-            <BadgeContainer href='https://www.youtube.com/channel/UCH4TK55SqiGyTIzwUnVpfxg?view_as=subscriber'>
+            <BadgeContainer href='https://www.youtube.com/channel/UCH4TK55SqiGyTIzwUnVpfxg?view_as=subscriber' target='_blank'>
                 <Badge src={youtube} />
             </BadgeContainer>
-            <BadgeContainer href='mailto:wolfen7lada@gmail.com'>
+            <BadgeContainer href='mailto:wolfen7lada@gmail.com' target='_blank'>
                 <Badge src={gmail} />
             </BadgeContainer>
         </FooterWrapper>
