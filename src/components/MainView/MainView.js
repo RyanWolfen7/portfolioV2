@@ -8,9 +8,10 @@ import { ContentWrapper } from '../../styles/MainView'
 import Footer from '../Footer/Footer'
 import AboutView from '../AboutView/AboutView'
 import SkillsView from '../SkillsView/SkillsView'
+import ProjectsView from '../Projects/Projects'
 
 const MainView = props => {
-    const [selected, setSelected] = useState({home: true, about: false, skills: false, projects: false, more: false})
+    const [selected, setSelected] = useState({home: false, about: false, skills: false, projects: true, more: false})
     const { height, width } = useWindowDimensions()
     const windowSize = determinWindowSize(height, width)
 
@@ -32,6 +33,7 @@ const MainView = props => {
                 {selected.home && <Home windowSize={windowSize}/>}
                 {selected.about && <AboutView windowSize={windowSize}/>}
                 {selected.skills && <SkillsView windowSize={windowSize}/>}
+                {selected.projects && <ProjectsView windowSize={windowSize}/>}
             </ContentWrapper>
             <Footer/>
         </>
