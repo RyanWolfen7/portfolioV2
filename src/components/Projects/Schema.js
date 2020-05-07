@@ -9,7 +9,7 @@ const healtheraAdminPortal = {
 const healtheraCommissions = {
     logo: healthera,
     header: 'Api Commissions',
-    sub: 'Pitched and created'
+    sub: 'Pitched and Created'
 }
 
 const vjloopsSite = {
