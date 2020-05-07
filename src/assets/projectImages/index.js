@@ -1,4 +1,4 @@
-import healthera from './healthera.png'
+import healthera from './Healthera.png'
 import vjloops from './vjloops.png'
 import rats from './rats.png'
 
