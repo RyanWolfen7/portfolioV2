@@ -111,7 +111,7 @@ export const History = styled.h4`
     place-self: center;
     margin: 0;
     cursor: pointer;
-    transition: 1.5s, 3s;
+    transition: 1s, 1.5s;
 
     :hover {
         padding: .5vw;
