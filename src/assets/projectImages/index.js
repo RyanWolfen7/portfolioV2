@@ -1,7 +1,9 @@
-import healthera from './Healthera.png'
+import healthera from './healthera.png'
 import vjloops from './vjloops.png'
+import rats from './rats.png'
 
-export default {
+export {
     healthera,
-    vjloops
+    vjloops,
+    rats
 }

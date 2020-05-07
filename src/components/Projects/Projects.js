@@ -1,20 +1,27 @@
 import React from 'react'
-import { ProjectsContainer, ProjectContainer } from '../../styles/ProjectStyles'
+import { ProjectsContainer, ProjectContainer, ProjectHeader, ProjectContent } from '../../styles/ProjectStyles'
+import schema from './Schema'
 
 const ProjectsView = props => {
     const { windowSize } = props
 
     const renderProjects = () => {
 
-        return (
-            <ProjectContainer>
-            </ProjectContainer>
-        )
+        return schema.map( project => {
+            const { logo, header, sub } = project 
+            return (<>
+                <ProjectContainer>
+                    <img src={logo} alt={logo}/>
+                    <ProjectHeader windowSize={windowSize}> { header } </ProjectHeader>
+            <ProjectContent windowSize={windowSize}> {sub} </ProjectContent>
+                </ProjectContainer>
+            </>)
+        }) 
     }
 
     return (
         <ProjectsContainer windowSize={windowSize}>
-            {renderProjects()}
+            { renderProjects() }
         </ProjectsContainer>
     )
 }
