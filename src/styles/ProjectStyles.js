@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { applySizedText } from '../helpers/index'
 
-export const ProjectContainer = styled.div`
+export const ProjectsContainer = styled.div`
     grid-area: 1 / 1 / span 6 / span 5; 
     display: grid;
     overflow-y: scroll;
@@ -18,4 +18,12 @@ export const ProjectContainer = styled.div`
         background-color: #C53212; 
         border: 3px solid #2e3830;      
     }
+`
+
+export const ProjectContainer = styled.div`
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat( 5, minmax(0, 1fr));
+    grid-template-rows: repeat( 5, minmax(0, 1fr));
 `

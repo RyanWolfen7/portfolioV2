@@ -1,13 +1,21 @@
 import React from 'react'
-import { ProjectContainer } from '../../styles/ProjectStyles'
+import { ProjectsContainer, ProjectContainer } from '../../styles/ProjectStyles'
 
 const ProjectsView = props => {
     const { windowSize } = props
 
-    return (
-        <ProjectContainer windowSize={windowSize}>
+    const renderProjects = () => {
 
-        </ProjectContainer>
+        return (
+            <ProjectContainer>
+            </ProjectContainer>
+        )
+    }
+
+    return (
+        <ProjectsContainer windowSize={windowSize}>
+            {renderProjects()}
+        </ProjectsContainer>
     )
 }
 
