@@ -19,7 +19,8 @@ export const Badge = styled.img`
     object-fit: contain;
     width: 65%;
     height: 65%;
-    transition: 1s;
+    transition: .6s;
+    transform: scale animation;
     border-radius: 2.5vw;
 
     :hover {

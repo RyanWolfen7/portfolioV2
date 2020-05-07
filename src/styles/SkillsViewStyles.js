@@ -62,7 +62,8 @@ export const SkillTab = styled.a`
     place-self: center;
     margin: 0;
     cursor: pointer;
-    transition: .5s, 1.5s;
+    transform: scale animation;
+    transition: .5s, 1s;
     background-color: #C53212;
     color: #E6DBC9 ;
     border-radius: 5%;

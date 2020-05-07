@@ -8,6 +8,7 @@ export const ProjectsContainer = styled.div`
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: #C53212 #2e3830;
+    padding: 1rem;
 
     ::-webkit-scrollbar {
         width: ${props => props.windowSize === 'phone' ? '8px' : '12px'};               
@@ -38,14 +39,14 @@ export const ProjectContent = styled.div`
     place-content: center;
     color: #E6DBC9;
     font-size: ${ props => { 
-        const sizes = { phone: '.9rem', sm: '1rem', md: '1.2rem', lg: '1.5rem', mx: '1.8rem'}
+        const sizes = { phone: '.6rem', sm: '1rem', md: '1.2rem', lg: '1.5rem', mx: '1.8rem'}
         return applySizedText(props.windowSize, sizes) 
     }};
 `
 
 export const ProjectContainer = styled.div`
-    margin: 1rem;
     padding: 0.8rem;
+    margin-bottom: 1rem;
     height: 6rem;
     background: #2E3831;
     display: grid;
@@ -56,6 +57,6 @@ export const ProjectContainer = styled.div`
         place-self: center;
         grid-area: 1 / 1 / span 2 / span 2;
         object-fit: contain;
-        width: 100%;
+        max-width: 100%;
     }
 `

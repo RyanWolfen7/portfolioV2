@@ -17,7 +17,7 @@ export const NavWrapper = styled.div`
 
 export const NavButton = styled.div`
     cursor: pointer;
-    transition: .5s, 1.5s;
+    transition: .5s, 1s;
     ${ props => {
         if(props.selected){
         return (

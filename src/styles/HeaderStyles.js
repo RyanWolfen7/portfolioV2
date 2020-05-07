@@ -31,7 +31,7 @@ export const TitleContainer = styled.div`
             const sizes = { phone: '2rem', sm: '3rem', md: '4rem', lg: '5rem', mx: '6rem'}
             return applySizedText(props.windowSize, sizes) 
         }};
-        transition: .5s, 1.5s;
+        transition: .5s, 1s;
     }
     h2 {
         color:  #e6dbc9;
