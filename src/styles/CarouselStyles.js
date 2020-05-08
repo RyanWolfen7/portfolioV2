@@ -61,7 +61,6 @@ export const CardContent = styled.div`
         justify-self: start;
         margin-bottom: 0;
         font-size: ${ props => {
-            console.log(props.windowSize) 
             const sizes = { phone: '3vh', sm: '3.3vh', md: '3.5vh', lg: '4vh', mx: '4.5vh'}
             return applySizedText(props.windowSize, sizes) 
         }};
@@ -150,7 +149,6 @@ export const OtherCardContent = styled.div`
         height: auto;
         margin: 0;
         font-size: ${ props => { 
-            console.log(props.windowSize)
             const sizes = { phone: '3vh', sm: '4vh', md: '4vh', lg: '4vh', mx: '4.5vh'}
             return applySizedText(props.windowSize, sizes) 
         }};
