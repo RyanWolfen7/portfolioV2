@@ -7,15 +7,15 @@ const ProjectsView = props => {
 
     const renderProjects = () => {
 
-        return schema.map( project => {
+        return schema.map( (project, i) => {
             const { logo, header, sub } = project 
-            return (<>
-                <ProjectContainer>
+            return (
+                <ProjectContainer key={i}>
                     <img src={logo} alt={logo}/>
                     <ProjectHeader windowSize={windowSize}> { header } </ProjectHeader>
-            <ProjectContent windowSize={windowSize}> {sub} </ProjectContent>
+                    <ProjectContent windowSize={windowSize}> {sub} </ProjectContent>
                 </ProjectContainer>
-            </>)
+            )
         }) 
     }
 
