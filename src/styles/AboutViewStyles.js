@@ -37,7 +37,7 @@ export const ContentCard = styled.div`
     width: 80%;
     height: 50vh;
     color: #E6DBC9;
-    grid-template-rows: 5% 85% auto;
+    grid-template-rows: auto 85% auto;
     
 `
 

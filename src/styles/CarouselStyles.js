@@ -61,7 +61,8 @@ export const CardContent = styled.div`
         justify-self: start;
         margin-bottom: 0;
         font-size: ${ props => { 
-            const sizes = { phone: '1.5rem', sm: '1.7rem', md: '1.9rem', lg: '2.1rem', mx: '2.3rem'}
+            console.log(props.windowSize)
+            const sizes = { phone: '3vh', sm: '4vh', md: '4vh', lg: '4vh', mx: '4.5vh'}
             return applySizedText(props.windowSize, sizes) 
         }};
 
@@ -83,7 +84,7 @@ export const CardContent = styled.div`
         place-self: start;
         margin-top: 0;
         font-size: ${ props => { 
-            const sizes = { phone: '.8rem', sm: '1.2rem', md: '1.3rem', lg: '1.4rem', mx: '1.5rem'}
+            const sizes = { phone: '1.5vh', sm: '2vh', md: '2.5vh', lg: '3vh', mx: '3vh'}
             return applySizedText(props.windowSize, sizes) 
         }}
     }
@@ -91,7 +92,7 @@ export const CardContent = styled.div`
         padding-top: 1vh;
         align-self: start;
         font-size: ${ props => { 
-            const sizes = { phone: '.8rem', sm: '1.1rem', md: '1.2rem', lg: '1.3rem', mx: '1.4rem'}
+            const sizes = { phone: '1.5vh', sm: '1.9vh', md: '2.1vh', lg: '2.3vh', mx: '2.5vh'}
             return applySizedText(props.windowSize, sizes) 
         }}
     }
@@ -148,10 +149,19 @@ export const OtherCardContent = styled.div`
         width: 100%;
         height: auto;
         margin: 0;
+        font-size: ${ props => { 
+            console.log(props.windowSize)
+            const sizes = { phone: '3vh', sm: '4vh', md: '4vh', lg: '4vh', mx: '4.5vh'}
+            return applySizedText(props.windowSize, sizes) 
+        }};
     }
 
     h3 {
         margin: 0 0 6%;
+        font-size: ${ props => { 
+            const sizes = { phone: '1.5vh', sm: '2vh', md: '2.5vh', lg: '3vh', mx: '3vh'}
+            return applySizedText(props.windowSize, sizes) 
+        }}
     }
 
 `
@@ -170,6 +180,10 @@ export const SkillList = styled.li`
                 }
             `
         }
+    }};
+    font-size: ${ props => { 
+        const sizes = { phone: '1.5vh', sm: '1.9vh', md: '2.1vh', lg: '2.3vh', mx: '2.5vh'}
+        return applySizedText(props.windowSize, sizes) 
     }}
 `
 

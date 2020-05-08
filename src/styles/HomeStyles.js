@@ -28,7 +28,7 @@ export const HomeText = styled.p`
         font-family: "Arial Black", Gadget, sans-serif;
     }
     font-size: ${ props => {
-        const sizes = { phone: '1rem', sm: '1.4rem', md: '1.5rem', lg: '1.6rem', mx: '2rem'}
+        const sizes = { phone: '3vh', sm: '3.5vh', md: '4vh', lg: '4.5vh', mx: '5vh'}
         return applySizedText(props.windowSize, sizes)
     }}
 `
