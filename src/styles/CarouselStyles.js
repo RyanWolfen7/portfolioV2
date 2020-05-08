@@ -92,7 +92,7 @@ export const CardContent = styled.div`
         padding-top: 1vh;
         align-self: start;
         font-size: ${ props => { 
-            const sizes = { phone: '1.3vh', sm: '1.5vh', md: '1.9vh', lg: '2vh', mx: '2.5vh'}
+            const sizes = { phone: '1.3vh', sm: '1.5vh', md: '2.3vh', lg: '2vh', mx: '2.5vh'}
             return applySizedText(props.windowSize, sizes) 
         }}
     }
