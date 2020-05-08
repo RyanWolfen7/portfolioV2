@@ -28,7 +28,7 @@ export const TitleContainer = styled.div`
         justify-self: center;
         margin: .6rem 0 0;
         font-size: ${ props => { 
-            const sizes = { phone: '5vh', sm: '7vh', md: '8vh', lg: '9vh', mx: '10vh'}
+            const sizes = { phone: '5vh', sm: '6vh', md: '6.5vh', lg: '7vh', mx: '10vh'}
             return applySizedText(props.windowSize, sizes) 
         }};
         transition: .5s, 1s;
@@ -39,7 +39,7 @@ export const TitleContainer = styled.div`
         align-self: start;
         margin: 0 0 .8rem;
         font-size: ${ props => { 
-            const sizes = { phone: '2vh', sm: '3vh', md: '4vh', lg: '4vh', mx: '5vh'}
+            const sizes = { phone: '2vh', sm: '3vh', md: '3.3vh', lg: '3.5vh', mx: '5vh'}
             return applySizedText(props.windowSize, sizes) 
         }}
     }

@@ -60,9 +60,9 @@ export const CardContent = styled.div`
         align-self: end;
         justify-self: start;
         margin-bottom: 0;
-        font-size: ${ props => { 
-            console.log(props.windowSize)
-            const sizes = { phone: '3vh', sm: '4vh', md: '4vh', lg: '4vh', mx: '4.5vh'}
+        font-size: ${ props => {
+            console.log(props.windowSize) 
+            const sizes = { phone: '3vh', sm: '3.3vh', md: '3.5vh', lg: '4vh', mx: '4.5vh'}
             return applySizedText(props.windowSize, sizes) 
         }};
 
@@ -84,7 +84,7 @@ export const CardContent = styled.div`
         place-self: start;
         margin-top: 0;
         font-size: ${ props => { 
-            const sizes = { phone: '1.5vh', sm: '2vh', md: '2.5vh', lg: '3vh', mx: '3vh'}
+            const sizes = { phone: '1.5vh', sm: '2vh', md: '2.1vh', lg: '2.5vh', mx: '3vh'}
             return applySizedText(props.windowSize, sizes) 
         }}
     }
@@ -92,7 +92,7 @@ export const CardContent = styled.div`
         padding-top: 1vh;
         align-self: start;
         font-size: ${ props => { 
-            const sizes = { phone: '1.5vh', sm: '1.9vh', md: '2.1vh', lg: '2.3vh', mx: '2.5vh'}
+            const sizes = { phone: '1.3vh', sm: '1.5vh', md: '1.9vh', lg: '2vh', mx: '2.5vh'}
             return applySizedText(props.windowSize, sizes) 
         }}
     }
