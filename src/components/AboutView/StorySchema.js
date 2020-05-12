@@ -24,21 +24,21 @@ export const renderStory = story => {
 
 const myStory = (
     <> 
-        <p id='top'> I was born in Heidelburg, Germany to two US Army parents. Being an Army brat we had to move often, because of this I've been exposed to many different walks of life.
-            One of the pros to not having a seditary home is that I had to get use to making new connections everywhere I've gone.</p>
+        <p id='top'> I was born in Heidelberg, Germany to two US Army parents. Being an Army brat, we had to move often, because of this I've been exposed to many different walks of life.
+            One of the pros to not having a sedentary home is that I had to get use to making new connections everywhere I've gone.</p>
         <p> In Highschool I lived in Clarksville, TN. There I worked for AT&T, broke horses for a summer, and helped in restoration projects during the TN floods. I have many a
             fond memories there and tons of adventures to boot.</p>
         <p> After HS I moved to San Anotnio, TX. There I worked for AT&T as a door to door salesman, moonlighted as a bartender, and went to University of Texas San Antonio.
-            I loved Texas, but after two years in I was looking towards following my parents footseps and enlisting in the US Army. I sold all of my things, took a break from school, put my notice into work and drove off to Ft. Walton Beach, Florida to train with my dads unit while I went through the enlistment process. </p>
+            I loved Texas, but after two years in I was looking towards following my parents footsteps and enlisting in the US Army. I sold all of my things, took a break from school, put my notice into work and drove off to Ft. Walton Beach, Florida to train with my dads unit while I went through the enlistment process. </p>
     </>
 )
 
 const theVet = (
     <>
         <p id='top'> I joined the Army in 2013 as an 11B Infantryman. I'd like to say I knew what I was getting into when I joined, because I was an Army brat, but it couldn't be further from the truth. There is a saying among Infantrymen that highlights ignorance and forces humility; "You gunna learn today"... and learned I did.</p>
-        <p> Basic was a culture shock for sure. You don't quite grasp a sense of urgency until you have a Drill Seargent screaming in your face. I developed foundations there for many of the skills I posses today. One of the biggest take aways I recieved there was our Drill Seargents last speach
-            before graduation. He said there is alway one more hill to take, one more kilometer to march, and one more day to do it all over again. This philosophy is the motivation that allows me to push myself past impossible and yet still remain grounded.</p>
-        <p> After Basic I was stationed at the worst place in the world... Hawaii; try not to feel to sorry for me. When it wasn't raining on us, we'd often bust our backs up mountains with nearly 100lbs of equipment on us, but even though my time there wasn't a cake walk... it was still Hawaii!!!</p>
+        <p> Basic was a culture shock for sure. You don't quite grasp a sense of urgency until you have a Drill Seargent screaming in your face. I developed foundations for many of the skills I posses today there. One of the biggest take aways I recieved there was our Drill Seargents last speach
+            before graduation. He said there is always one more hill to take, one more kilometer to march, and one more day to do it all over again. This philosophy is the motivation that allows me to push myself past impossible and yet still remain grounded.</p>
+        <p> After Basic I was stationed at the worst place in the world... Hawaii; try not to feel to sorry for me. When it wasn't raining on us, we'd often bust our backs up mountains with nearly 100lbs of equipment, but even though my time there wasn't a cake walk... it was still Hawaii!!!</p>
         <p> The 3 years I was stationed there: I became a Jungle Expert, deployed to the Philippines, worked with many forieng nationals, learned about 'chokes' (alot) of cultures, and forged tons of memories.</p>
         <p> Nearing the end of my contract, I decided to leave. I felt like I had done my part and was now motivated to explore ever more cultures and carve my slice out of life somewhere. I decided to headout and backpack the whole world. The things I took with me from the Army: Dicipline, attention to detail, undying motivation,
             fortitued, a sense of urgency, survival skills, and perseverance.</p> 
@@ -60,10 +60,10 @@ const theTraveler = (
 
 const theCoder = (
     <>
-        <p id='top'>After all my traveling I realized I'd have to become a productive member of society again. I've always been interested in tech since I was a kid, but didn't have an avenue of approaching it as a carreer. I decided to go back to university and was accepted at the University of Alabama for a Computer Science Degree path. </p>
-        <p>Unfortionately due to a traumatic brain injury (TBI) from the Army I soon found myself having to temporarily halting studies to get treated. I fully recovered after my treatments, but found myself having to wait to get back to my studies. Reflecting upon some experiences I had, and the length it would take me to get into the career field, I decided I wasn't learning as much
-            as I should fast enough. An example being that I got a 100% on an examn for writing an 13 nested 2000 line if else statement after a year of study.</p>
-        <p> The realization of my ineptitude led me to re-evaluate my mindset and conduct the way I went about learning differently. In school I'd wait for a lesson to be given and not be proactive in finding these things out on my own. I decided during summer break I'd continue my studies at a code camp in London called Makers Academy. I chose Makers, because it destinguished itself as 
+        <p id='top'>After all my traveling I realized I'd have to become a productive member of society again. Since I was a kid I've always been interested in tech, but didn't have an avenue of approaching it as a carreer. I decided to go back to university and was accepted at the University of Alabama for a Computer Science Degree path. </p>
+        <p>Unfortionately due to a traumatic brain injury (TBI) from the Army I soon found myself having to temporarily halt my studies to get treated. I fully recovered after my treatments, but found myself having to wait to get back to my studies. Reflecting upon some experiences I had, and the length it would take me to get into the career field, I decided I wasn't learning as much
+            as I should fast enough. An example being that I got a 100% on an exam for writing an 13 nested 2000 line if else statement after a year of study.</p>
+        <p> The realization of my ineptitude led me to re-evaluate my mindset and the way I went about learning. In school I'd wait for a lesson to be given and not be proactive in finding these things out on my own. I decided during summer break I'd continue my studies at a code camp in London called Makers Academy. I chose Makers, because it destinguished itself as 
             a school that focussed more on the mindset of a developer and less on the code. I understood from my days in the military that a mindset is more valuable then the skills in your profession, from mindset comes ethic, from ethics come skills.</p>
         <p> I scoffed at the idea of the 'Bootcamp" part in coding bootcamp, but as someone who has been through Infantry bootcamp and Coding bootcamp... the similarities are eerie. Codecamp was no joke and I found myself struggling, albiet in different ways, as I would in the Army. In the army I was forged into a Soldier, at Makers I feel like I was forged into a Coder. I got the piece
             of the puzzle for the career I wanted at makers and I started to develop a programers mindset. So much so I even abandond the language taught at makers (Ruby) almost immidiately and chose to learn Javascript. At this point language and stack doesn't matter to me, because I have the confidence and the mindset to accomplish anything I decide to persue.</p>
