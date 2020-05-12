@@ -13,7 +13,7 @@ const Home = props => {
                     It was built with a redux thunk structure for future improvements and 
                     you can find this site's source code <a href='https://github.com/RyanWolfen7/portfolioV2'>here</a>.
                     It is still a work in progress. 
-                    Peruse at your leisure and feel free to contact me with one of the below links.
+                    Peruse at your leisure and feel free to contact me with one of the links bellow.
                 </HomeText>
             </HomeCard>
         </HomeWrapper>

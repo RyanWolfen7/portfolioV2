@@ -28,6 +28,15 @@ const Q = {
     linkedIn: 'https://www.linkedin.com/in/quintus-liu-1424ab84/'
 }
 
+const Kevin = {
+    name: 'Kevin Lanzon',
+    company: 'Healthera',
+    position: 'Senior Full Stack Developer',
+    testimonial: `Ryan has proved himself to be an excellent developer, who learns quickly and asks the right questions and can focus under pressure. He is also great in a
+    team environment and good fun to be around!`,
+    linkedIn: 'https://www.linkedin.com/in/kevin-lanzon-606908ba/'
+}
+
 const Marius = {
     name: 'Marius Guei',
     company: 'Makers',
@@ -56,6 +65,7 @@ export default [
     AhmadAlhasan,
     JinDai,
     Q,
+    Kevin,
     Chloe,
     Marius
 ]

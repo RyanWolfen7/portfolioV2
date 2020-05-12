@@ -2,7 +2,7 @@ import React from 'react'
 import { NavWrapper, NavButton } from '../../styles/NavBarStyles'
 
 const NavBar = props => {
-    const {windowSize, selected, handleSelectedTab }= props
+    const { windowSize, selected, handleSelectedTab }= props
 
     const handleSelect = event => {
         handleSelectedTab(event.target.id)
