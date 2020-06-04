@@ -62,6 +62,7 @@ export const CardHeader = styled.div`
         align-self: center;
         object-fit: contain;
         width: auto;
+        max-width: 2vh;
         max-height: 90%;
         margin-right: 5%;
         transition: .6s;
