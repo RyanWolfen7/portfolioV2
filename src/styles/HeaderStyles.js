@@ -49,6 +49,7 @@ export const Logo = styled.img`
     place-self: center;
     object-fit: contain;
     width: auto;
+    max-width: 15vh;
     max-height: 70%;
     border: 1vh solid #2e3830;
 `
