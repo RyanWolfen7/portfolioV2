@@ -17,6 +17,7 @@ export const Photo = styled.img`
     place-self: center;
     object-fit: contain;
     width: auto;
+    max-width: 20vh;
     max-height: 90%;
     border: .3vw solid #2e3830;
     border-radius: 3%;
