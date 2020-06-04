@@ -2,7 +2,7 @@
 
 ## About
 
-    This app is made with a redux thunk pattern. It is still a work in progress so its not to functional right now. In the futer I will mock the data and inject it into the store. I will then make an api and have it stored on the backend. I have alot of future plans for this, but I currently only have a few minutes here and there to commit to the project.
+This app is made with a redux thunk pattern. It is still a work in progress so its not to functional right now. In the futer I will mock the data and inject it into the store. I will then make an api and have it stored on the backend. I have alot of future plans for this, but I currently only have a few minutes here and there to commit to the project.
 
 ## Todos
 - Refactor and Abstact some of my components
