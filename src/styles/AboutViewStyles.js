@@ -116,8 +116,6 @@ export const History = styled.h4`
     transition: 1s, 1.5s;
 
     :hover {
-        padding: .5vw;
-        border: 1px solid #C53212;
         color: #2E3831;
         background-color: #E6DBC9;
     }
